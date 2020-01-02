@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="new-note-form">
+                <div class="form-section">
+                    <label>Title</label>
+                    <input class="input-txt" id="title" type="text" placeholder="Enter title..." autocomplete="off" >
+                </div>
+                
+                <div class="form-section">
+                    <label>Content</label>
+                    <textarea class="input-txt" id="content" placeholder="Enter content..."></textarea>
+                </div>
+
+                <div class="form-section">
+                    <label>Color</label>
+                    <select class="input-txt" id="color">
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                        <option value="yellow">Yellow</option>
+                    </select>
+                </div>
+
+                <input id="uuid" type="hidden">
+
+                <div class="form-section">
+                    <label></label>
+                    <div>
+                        <button class="btn mr-5" type="submit">Save</button>
+                        <button class="btn" type="reset">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="notes-section">
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
